@@ -1,4 +1,13 @@
-temp = input('输入一个数字锕：')
-while not temp.isdigit():
-    print('不是一个整数')
-print('这是一个整数')
+psw = input('请输入密码:')
+answer = '二狗大帅逼'
+i = 3
+while i > 0:
+    
+    if psw == answer:
+        print('密码正确。')
+        break  
+    else:
+        i -=1
+        psw = input('从新输入')
+        continue
+print('没机会啦')
