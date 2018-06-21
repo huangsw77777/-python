@@ -1,16 +1,18 @@
-"""psw = input('请输入密码:')
+"""
 answer = '二狗大帅逼'
 i = 3
 while i > 0:
-    
+    psw = input('请输入密码:')
     if psw == answer:
         print('密码正确。')
         break  
+    elif '*' in psw:
+        print('不能含有*号，你还有%d次机会'%i)
     else:
         i -=1
-        psw = input('从新输入')
+        print('从新输入,你还有%d次机会'%i)
         continue
-print('没机会啦')  上面是自己做的
+print('没机会啦')    上面是自己做的
 """
 count = 3
 password = 'FishC.com'
